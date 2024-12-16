@@ -1,0 +1,229 @@
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px; /* Slightly reduced padding */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the navbar content */
+  }
+  
+  /* Nav Links Styling */
+  .navbar .nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Flexbox layout for nav links */
+    justify-content: space-around; /* Space between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0;
+  }
+  
+  .navbar .nav-links a {
+    color: white; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around the links */
+    display: block;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 5px; /* Optional: Rounded corners on hover */
+  }
+  /* Parent container holding .container and .container1 */
+.parent {
+  display: flex;
+  background-color: #dfc8c8;
+
+  /* Align children in a row */
+
+ /* Space between .container and .container1 */
+ /* Space between .container and .container1 (optional) */
+}
+
+/* Styles for .container and .container1 */
+
+  /* Add margin to the main content to avoid overlap with the fixed navbar */
+/* Container Styles */
+.container {
+  display: flex;
+ 
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally */
+  /* Ensures the container takes the full viewport height */
+}
+.container1 {
+  
+  display: flex;
+        
+  align-items: center; /* Centers vertically */
+  justify-content: center; 
+  max-width: 700px;
+  /* Centers horizontally *
+  /
+  /* Ensures the container takes the full viewport height */
+}
+
+/* Quote Generator Styles */
+.quote-generator {
+  max-width: 500px;
+  background-color: #aea2a22b;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin: 20px; /* Optional for inner spacing */
+}
+
+  
+/* Quote Section Styles */
+.quotes-section {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 800px;
+    margin: 20px auto; /* Center the section */
+    
+}
+
+/* Button Group Styles */
+/* Button Group Styling */
+.button-group {
+    display: flex; /* Keep buttons in a single row */
+    align-items: center; /* Vertically align buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Evenly spaced gap between buttons */
+    margin-top: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+button {
+    background-color: #28a745; /* Green background for all buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+    min-width: 100px; /* Ensures a consistent button size */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.share-dropdown {
+    position: relative; /* Position for dropdown content */
+}
+
+.share-btn {
+    background-color: #007bff; /* Blue background for share button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ensures the dropdown button remains aligned */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the share button */
+    left: 0;
+    background-color: #f1f1f1; /* Light background for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for the dropdown */
+    z-index: 1;
+    padding: 10px;
+}
+
+.share-dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content button {
+    width: 100%; /* Full width for each dropdown button */
+    padding: 10px;
+    border: none;
+    background: none; /* No background for dropdown buttons */
+    text-align: left; /* Left-align text */
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd; /* Light background on hover for dropdown items */
+}
+
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the share button */
+    left: 0;
+    background-color: #2e2121; /* Light background for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for the dropdown */
+    z-index: 1;
+  }
+  
+  .share-dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .dropdown-content button {
+    width: 100%; /* Full width for each dropdown button */
+    padding: 10px;
+    border: none;
+    background: none; /* No background for dropdown buttons */
+    text-align: left; /* Left-align text */
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #a79090; /* Light background on hover for dropdown items */
+  }
+  
+
+/* Input Fields */
+input[type="text"],
+input[type="color"],
+input[type="file"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding for comfort */
+    margin: 10px 0; /* Space between fields */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Buttons */
+button {
+    background-color: #cd7715; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Image Preview */
+.quote-generator img {
+  max-width: 100%; /* Responsive image */
+  height: auto;
+  margin: 10px 0;
+  border: 5px solid #000000; /* Border styling */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .quote-generator {
+        padding: 60px 10px; /* Adjusted padding for smaller screens */
+    }
+}

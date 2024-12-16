@@ -1,0 +1,346 @@
+/* Home.css */
+
+body {
+  background-color: #f5f7fa;
+}
+
+.motivational-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow from animations */
+}
+
+.motivational-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #6c63ff;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.quotes-container {
+  margin: 0 auto;
+  max-width: 800px; /* Adjust as necessary */
+  text-align: center; /* Center align quotes */
+  position: relative; /* Positioning for animation */
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 20px 0;
+  opacity: 0; /* Start with hidden quotes */
+  animation: fadeIn 1s forwards; /* Animation for fading in */
+  transform: translateY(20px); /* Start slightly below */
+  animation-timing-function: ease-in-out; /* Easing function */
+}
+
+/* Animation for fade in and move up */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add delay to each quote's animation */
+.quote:nth-child(1) {
+  animation-delay: 0s; /* First quote appears immediately */
+}
+.quote:nth-child(2) {
+  animation-delay: 0.5s; /* Second quote appears after half a second */
+}
+.quote:nth-child(3) {
+  animation-delay: 1s; /* Third quote appears after one second */
+}
+
+.quote-reflection {
+  font-size: 1rem;
+  margin: 0 0 30px 0;
+  color: #555; /* Slightly lighter color for reflections */
+}
+
+.about-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-media-icons {
+  margin: 20px 0;
+}
+
+.social-media-icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #6c63ff;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #5949d6;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.map {
+  margin: 20px 0;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+.motivational-section {
+  background-image: url('../Images/image5.jpg'); /* Ensure correct path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center center; /* Centers the background image both vertically and horizontally */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-attachment: fixed; /* Makes the image stay fixed during scroll */
+  padding: 40px; /* Adds padding inside the section */
+  color: #fff; /* Sets the text color to white for contrast */
+  min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+  display: flex; /* Flexbox to center the content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center; /* Centers the text */
+}
+
+
+.motivational-heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.intro-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  font-size: 1.5em;
+  font-style: italic;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(232, 5, 5, 0.6); /* Adds a dark transparent background for readability */
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.quote-reflection {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background for reflections */
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 80%;
+}
+/* General styling for the About Us section */
+.about-section {
+  background-color: #f3eded; /* Light background for a clean look */
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 800px;
+  margin: 20px auto; /* Center the section */
+  font-family: 'Lato', sans-serif; /* Elegant, clean font */
+  line-height: 1.6;
+}
+
+/* Heading styling */
+.about-section h2 {
+  font-size: 2.5em;
+  color: #432525;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* Paragraph styling */
+.about-section p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: justify; /* Smooth text alignment */
+}
+
+/* Highlighted text */
+.about-section strong {
+  color: #3c85f3; /* Accent color to make certain words stand out */
+  font-weight: bold;
+}
+
+/* List styling */
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-left: 4px solid #3c85f3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for elegance */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add hover effect for list items */
+.about-section ul li:hover {
+  background-color: #3c85f3;
+  color: #fff;
+  border-left: 4px solid #fff;
+}
+
+.about-section ul li strong {
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Padding and margin to make the content breathe */
+.about-section p, .about-section ul {
+  padding-left: 10px;
+}
+/* Section Background */
+.contact-section {
+  background-color: #eed8ea; /* Light background color */
+  padding: 50px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(195, 92, 92, 0.1);
+}
+
+/* Flexbox container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Map Styling */
+.map {
+  flex: 1;
+  margin-right: 120px; /* Add some space between map and form */
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 40px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  flex: 1;
+  background-color: #f1c7c76b; /* White background for the form */
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(202, 133, 133, 0.1); /* Soft shadow for the form */
+  max-width: 400px; /* Adjust form width */
+}
+
+/* Form Elements */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Submit Button */
+button {
+  padding: 10px 15px;
+  background-color: #bcc9bd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a8b4a9;
+}
+
+/* Headings and Paragraphs */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Copyright Text */
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #b71616e2;
+  
+  margin-top: 20px;
+}

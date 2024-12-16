@@ -1,0 +1,61 @@
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .quote-image-wrapper {
+    width: calc(33.333% - 20px); /* Three items per row */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .download-button, .share-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .download-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .share-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .quote-image-wrapper {
+      width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote-image-wrapper {
+      width: 100%; /* One item per row on very small screens */
+    }
+  }
+  
